@@ -17,28 +17,31 @@ Streamlit
 An API key for The Movie Database (TMDB) API
 An API key for OpenAI
 ### Installation
+
 Clone the repo
 ```python
 git clone https://github.com/qepting91/BooHub.git
-'''
+```
 
 Install Python packages
 
 ```python
 pip install -r requirements.txt
-'''
+```
+
 Create a .env file in the root directory and enter your TMDB and OpenAI API keys:
 
 ```python
 OPENAI_API_KEY = 'YOUR_OPENAI_API_KEY'
 TMDB_API_KEY = 'YOUR_TMDB_API_KEY'
-'''
+```
 
 ### Usage
 Run the following command in your terminal:
 
-```sh
-   streamlit run app.py
+```python
+streamlit run app.py
+```
 
 
 Then navigate to localhost:8501 in your web browser to view the application.
