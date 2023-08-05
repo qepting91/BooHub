@@ -1,17 +1,14 @@
 import streamlit as st
 import openai
 import os 
-from dotenv import load_dotenv
+
 
 openai_api_key = st.secrets["openai_key"]
 
 # Set the OpenAI API key
 openai.api_key = openai_api_keyy
 
-load_dotenv()
 
-# Load OpenAI key
-openai.api_key = os.getenv("OPENAI_API_KEY")
 
 def generate_response(prompt, user_input):
     response = openai.ChatCompletion.create(
