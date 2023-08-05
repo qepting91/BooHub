@@ -1,0 +1,7 @@
+streamlit
+numpy
+pandas
+streamlit-extras
+openai
+python-dotenv
+tmdb3
