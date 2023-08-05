@@ -2,6 +2,13 @@ import os
 import streamlit as st
 import tmdbsimple as tmdb
 from dotenv import load_dotenv
+import toml
+
+# Parse the TOML file
+config = toml.load("secrets.toml")
+
+# Access the keys
+tmdb_api_key = config["api_keys"]["tmdb_api_key"]
 
 load_dotenv()
 
