@@ -18,10 +18,9 @@ An API key for The Movie Database (TMDB) API
 An API key for OpenAI
 ### Installation
 Clone the repo
-sh
-'''
-git clone https://github.com/your_username_/BooHub.git
-'''
+```sh
+   git clone https://github.com/qepting91/BooHub.git
+
 Install Python packages
 '''
 sh
