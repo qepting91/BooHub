@@ -37,11 +37,13 @@ def app():
     if st.button('Get Ideas'):
         if option == 'Halloween Recipe':
             system_prompt = "You are an expert chef who specializes in creating fun and spooky Halloween recipes."
-            response = generate_response(system_prompt, user_prompt)
-            st.write(response)
+            with st.spinner("Cooking up the recipe..."):
+                response = generate_response(system_prompt, user_prompt)
+                st.write(response)
         else:
             system_prompt = "You are a skilled craftsman with a knack for DIY Halloween decorations."
-            response = generate_response(system_prompt, user_prompt)
-            st.write(response)
+            with st.spinner("Searching the craft box..."):
+                response = generate_response(system_prompt, user_prompt)
+                st.write(response)
 
 app()
