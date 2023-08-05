@@ -5,6 +5,13 @@ import string
 import openai
 import streamlit as st
 from dotenv import load_dotenv 
+import toml
+
+# Parse the TOML file
+config = toml.load("secrets.toml")
+
+# Access the keys
+openai_key = config["api_keys"]["openai_key"]
 
 
 
