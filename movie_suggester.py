@@ -9,43 +9,6 @@ load_dotenv()
 api_key = os.getenv('tmdb_api_key')
 tmdb.API_KEY = api_key
 
-# Custom CSS for Halloween theme
-halloween_css = """
-body {
-    background-color: #000;
-    color: #fff;
-}
-
-h1 {
-    color: #ff6f00;
-}
-
-input[type="text"], button {
-    background-color: #ff6f00;
-    color: #000;
-    border: none;
-    padding: 10px;
-    border-radius: 5px;
-    margin-top: 10px;
-}
-
-table {
-    color: #000;
-    background-color: #ff6f00;
-    border-collapse: collapse;
-    width: 100%;
-}
-
-th, td {
-    padding: 10px;
-    text-align: left;
-}
-
-th {
-    background-color: #000;
-    color: #ff6f00;
-}
-"""
 
 def app():
     # Create a Streamlit UI with Halloween theme and drop-down list
