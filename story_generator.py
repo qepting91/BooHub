@@ -44,8 +44,6 @@ def app():
     }
     </style>
     """, unsafe_allow_html=True)
-    # Apply Halloween theme
-    st.markdown(f'<style>{halloween_css}</style>', unsafe_allow_html=True)
 
     st.title('Spooky Story Generator')
     starting_phrase = st.text_input('Enter a starting phrase for your story')
