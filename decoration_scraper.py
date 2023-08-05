@@ -1,6 +1,7 @@
 import streamlit as st
 import openai
-import os 
+import os
+from streamlit_extras import stoggle
 
 
 openai_api_key = st.secrets["openai_key"]
@@ -26,9 +27,11 @@ def app():
     st.subheader("👻🎃💀")
 
     st.markdown("## History of Halloween")
-    st.markdown('<iframe src="https://blogs.loc.gov/headlinesandheroes/2021/10/the-origins-of-halloween-traditions/" width="100%" height="450"></iframe>', unsafe_allow_html=True)
+    # Add a checkbox to show or hide the history section
+    stoggle('Show history',
+            '<iframe src="https://blogs.loc.gov/headlinesandheroes/2021/10/the-origins-of-halloween-traditions/" width="100%" height="450"></iframe>')
+    
     st.markdown("---")  # Add horizontal line for separation
-
     st.markdown("## Halloween Recipe and Decoration Generator")
     # Dropdown menu for user to select recipe or decoration
     option = st.selectbox('What would you like help with?', ['Halloween Recipe', 'DIY Halloween Decoration'])
