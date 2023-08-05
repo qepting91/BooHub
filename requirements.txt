@@ -5,3 +5,4 @@ streamlit-extras
 openai
 python-dotenv
 tmdb3
+tmdbsimple
