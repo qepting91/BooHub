@@ -28,8 +28,9 @@ def app():
 
     st.markdown("## History of Halloween")
     # Add a checkbox to show or hide the history section
-    stoggle('Show history',
-            '<iframe src="https://blogs.loc.gov/headlinesandheroes/2021/10/the-origins-of-halloween-traditions/" width="100%" height="450"></iframe>')
+    with st.beta_expander("Show history"):
+        st.markdown('<iframe src="https://blogs.loc.gov/headlinesandheroes/2021/10/the-origins-of-halloween-traditions/" width="100%" height="450"></iframe>', unsafe_allow_html=True)
+    
     
     st.markdown("---")  # Add horizontal line for separation
     st.markdown("## Halloween Recipe and Decoration Generator")
