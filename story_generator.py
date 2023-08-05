@@ -4,21 +4,12 @@ import random
 import string
 import openai
 import streamlit as st
-from dotenv import load_dotenv 
 
 openai_api_key = st.secrets["openai_key"]
 
 # Set the OpenAI API key
 openai.api_key = openai_api_key
 
-
-
-def load_env():
-    """
-    Load environment variables
-    """
-    load_dotenv()
-    openai.api_key = os.getenv("OPENAI_API_KEY")
 
 def generate_story(starting_phrase, length=1000, artist_role='Dark Romanticism'):
     """
