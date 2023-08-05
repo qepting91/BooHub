@@ -20,18 +20,18 @@ An API key for OpenAI
 Clone the repo
 ```sh
    git clone https://github.com/qepting91/BooHub.git
-
+'''
 Install Python packages
 
 ```sh
    pip install -r requirements.txt
-
+'''
 Create a .env file in the root directory and enter your TMDB and OpenAI API keys:
 
 ```sh
    OPENAI_API_KEY = 'YOUR_OPENAI_API_KEY'
    TMDB_API_KEY = 'YOUR_TMDB_API_KEY'
-
+'''
 
 ### Usage
 Run the following command in your terminal:
