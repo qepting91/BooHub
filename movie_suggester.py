@@ -12,7 +12,6 @@ tmdb.API_KEY = api_key
 
 def app():
     # Create a Streamlit UI with Halloween theme and drop-down list
-    st.markdown(f'<style>{halloween_css}</style>', unsafe_allow_html=True)
     st.title('Spooky Movie Suggester 🎃')
 
     st.header('Search for a movie')
