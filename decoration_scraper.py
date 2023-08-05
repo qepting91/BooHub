@@ -6,7 +6,7 @@ import os
 openai_api_key = st.secrets["openai_key"]
 
 # Set the OpenAI API key
-openai.api_key = openai_api_keyy
+openai.api_key = openai_api_key
 
 
 
